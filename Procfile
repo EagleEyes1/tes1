@@ -1,1 +1,1 @@
-web: gunicorn webbangryan.wsgi --log-file -
+web: gunicorn webbryan.wsgi --log-file -
