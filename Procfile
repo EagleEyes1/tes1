@@ -1,1 +1,1 @@
-web: gunicorn webbryan.wsgi --log-file -
+web: gunicorn https://sultanfajarjaya.herokuapp.com/.wsgi --log-file -
