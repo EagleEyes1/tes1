@@ -1,1 +1,1 @@
-web: gunicorn sultanfajarjaya.wsgi --log-file -
+web: gunicorn tes1.wsgi --log-file -
