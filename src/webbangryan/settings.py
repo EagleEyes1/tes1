@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'halutama',
     'login',
     'jenisikan',
-    'django_heroku',
+    
 ]
 
 MIDDLEWARE = [
