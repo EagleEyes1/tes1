@@ -274,7 +274,7 @@ thead {
 }
 .form-control {
   background-color: #e5cda7;
-  color: rgb(23, 0, 194);
+  color: #000;
   border-color: #e1e3e8;
   -webkit-box-shadow: 1px 2px 2px 0 #e5cda7;
   -moz-box-shadow: 1px 2px 2px 0 #e5cda7;
@@ -282,7 +282,7 @@ thead {
 }
 .form-control:focus {
   background-color: #fff;
-  color: rgb(23, 0, 194);
+  color: #000;
   border-color: transparent;
   box-shadow: 0 0 0 0.1rem #e5cda7;
 }
@@ -641,9 +641,8 @@ input[type="checkbox"]:focus {
   }
   .nav-link {
     color: #fff;
-    background-color: #8FCBFF;
+    background-color: #15375A;
     padding: 15px;
-    flex-direction: row;
   }
   .nav-link > i {
     font-size: 1rem;
@@ -844,11 +843,11 @@ input[type="checkbox"]:focus {
   color: #ffffff;
 }
 .navbar {
+  position: fixed;
   color: #ffffff;
   height: 60px;
   background-color: #15375A;
   padding: 0;
-  box-shadow: 0 4px 5px 0 #e4e7ed;
 }
 .navbar-nav .active > .nav-link,
 .navbar-nav .nav-link.active {

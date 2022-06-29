@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl">
+<nav class="navbar navbar-expand-xl fixed-top">
     <div class="container h-100">
       <a class="navbar-brand" href="{% url 'barmas:tabel' %}">
         <h1 class="tm-site-title mb-0">Halaman Utama</h1>
@@ -14,10 +14,10 @@
       >
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto h-100">
+        <ul class="navbar-nav ml-5 h-100">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'jenisikan:halamanproduk' %}">
-              <i class="fas fa-tachometer-alt"></i>Produk
+            <a class="nav-link"  href="{% url 'jenisikan:halamanproduk' %}">
+              <i class="fa-solid fa-fish-fins"></i>Produk
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -26,7 +26,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link d-block" href="{% url 'login:logout' %}">
-              Admin, <b>Logout</b>
+              {{ pengguna }}, <b>Logout</b>
             </a>
           </li>
         </ul>

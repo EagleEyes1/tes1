@@ -34,16 +34,21 @@
   <body>
     {% include 'header.html' %}
   
-  <div class="content">
-    
+  <div class="content mt-0">
     <div class="container">
-      <h1 class="mb-5">Selamat Datang {{ pengguna }}</h1>
-      <h2 class="mb-5">Tabel Barang Masuk</h2>
+      
+      <img style="width:25%;" src="{% static 'images/SULTAN1.png' %}" alt="..">
+      
+      <h1 style="padding:80px; display:inline-block; color:#15375A;">Selamat Datang {{ pengguna }}</h1>
+        
+      
+      <!-- <div class="img" style=""></div> -->
+      <h2 class="ml-4 mt-5" style="color:#15375A;">Tabel Transaksi Barang Masuk</h2>
       <!-- <a class="float-right btn btn-primary btn-sm" href="{% url 'jenisikan:tambahjenisikan' %}">Tambah Jenis Ikan</a> -->
       <div>
         <a style="margin-right:20px;" class="float-right btn btn-primary btn-sm" href="{% url 'barmas:awal' %}">Tambah Barang Masuk</a>
       <div style="padding:15px" class="table-responsive">
-        <hr /> 
+        <hr style="border: 2px solid #9ba2a8;"/> 
         <table id="tabeldata" class="table custom-table">
           <thead>
             <tr>
@@ -92,12 +97,12 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Hapus Data</h5>
+                  <h5 class="modal-title" style="color: #15375A;" id="exampleModalLabel">Hapus Data</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div  style="color: #15375A;" class="modal-body">
                  Data yang dihapus tidak bisa dipulihkan kembali
                 </div>
                 <div class="modal-footer">
@@ -112,7 +117,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Bukti Kedatangan</h5>
+                  <h5 class="modal-title"  style="color: #15375A;" id="exampleModalLabel">Bukti Kedatangan</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>

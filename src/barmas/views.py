@@ -33,7 +33,7 @@ def awal(request):
             Bmasuk1.save()
             return redirect('../')
 
-        return render(request, 'masuk.html', {'baris': baris})
+        return render(request, 'masuk.html', {'baris': baris, 'pengguna':request.user.username})
     else:
         return redirect('/login/')
 
@@ -72,7 +72,7 @@ def edit_awal(request, id):
             Bmasuk.objects.filter(id=id).update(j_ikan=jenis_ikan, k_ikan=kuantitas, ket=keterangan, m_kend=jenis_mobil, p_kend=plat_mobil, 
             t_datang = t_datang, b_gambar = b_gambar, harga = harga)
             return redirect('barmas:tabel')
-        return render(request, 'edit_masuk.html', {'baris': baris, 'jenisikan':jenisikan1})
+        return render(request, 'edit_masuk.html', {'baris': baris, 'jenisikan':jenisikan1, 'pengguna':request.user.username})
     else: 
         return redirect('/login/')
 

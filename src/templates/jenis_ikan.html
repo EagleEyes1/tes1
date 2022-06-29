@@ -31,15 +31,15 @@
     {% include 'header.html' %}
     <div class="container tm-mt-big tm-mb-big">
       <div class="row">
-        <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
-          <div style="border-radius: 30px;"class="tm-bg-primary-dark tm-block tm-block-h-auto">
+        <div class="col-xl-7 col-lg-10 col-md-12 col-sm-12 mx-auto">
+          <div style="border-radius: 30px;"class="tm-bg-primary-dark tm-block tm-block-h-auto mt-5">
             <div class="row">
               <div class="col-12">
-                <h2 class="tm-block-title d-inline-block">Tambah Jenis Ikan</h2>
+                <h2 class="tm-block-title d-inline-block d-flex justify-content-center">Tambah Jenis Ikan</h2>
               </div>
             </div>
-            <div class="row tm-edit-product-row">
-              <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="row tm-edit-product-row d-flex justify-content-center">
+              <div>
                 <form action="" method='POST'  class="tm-edit-product-form" enctype ="multipart/form-data">{% csrf_token %}
                   <div class="form-label-group">
                     <input 
@@ -55,44 +55,40 @@
                       >Jenis Ikan
                     </label>
                   </div>
-                  <div class="row">
-                    <div class="form-group mb-0 col-xs-12 col-sm-6">
-                      <div class="form-label-group">
-                        <input
-                        placeholder="ex. Blabla"
-                        id="hargakilo"
-                        name="hargakilo"
-                        type="number"
-                        value="Rp."
-                        class="form-control validate"
-                        required
-                      />
-                      <label
-                        for="hargakilo"
-                        >Harga Per Kilo
-                      </label>
-                      </div>
-                    </div>
+                  <div class="form-label-group">
+                    <input
+                    placeholder="ex. Blabla"
+                    id="hargakilo"
+                    name="hargakilo"
+                    type="number"
+                    value="Rp."
+                    class="form-control validate"
+                    required
+                  />
+                  <label
+                    for="hargakilo"
+                    >Harga Per Kilo
+                  </label>
                   </div>
-                  <div class="row">
-                    <div class="form-group mb-0 col-xs-12 col-sm-6">
-                      <div class="form-label-group">
-                        <input
-                        placeholder="ex. Blabla"
-                        id="hargaton"
-                        name="hargaton"
-                        type="number"
-                        value="Rp."
-                        class="form-control validate"
-                        required
-                      />
-                        <label
-                        for="hargaton"
-                        >Harga Per Ton
-                        </label>
-                      </div> 
-                    </div>        
-              </div>
+          
+              
+                  <div class="form-label-group">
+                    <input
+                    placeholder="ex. Blabla"
+                    id="hargaton"
+                    name="hargaton"
+                    type="number"
+                    value="Rp."
+                    class="form-control validate"
+                    required
+                  />
+                    <label
+                    for="hargaton"
+                    >Harga Per Ton
+                    </label>
+                  </div> 
+              
+              
               <!-- <div class="form-group">
                 <label style="color:#ffffff;" for="image">Gambar Ikan</label>
                 <input type="file" id="image" class="form-control-file"
@@ -100,14 +96,15 @@
               </div> -->
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Upload</span>
+                  <span class="input-group-text" style="color: #000000; background-color: #e5cda7;">Upload</span>
                 </div>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="inputGroupFile01">
-                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                  <input type="file" name="image" class="custom-file-input" style="background-color: #e5cda7;" id="inputGroupFile01" required>
+                  <label class="custom-file-label" for="inputGroupFile01" style="color: #000000; background-color: #e5cda7;">Choose file</label>
                 </div>
               </div>
-              <div class="col-12" >
+            </div> 
+              <div class="col-11 d-flex justify-content-center" >
                 <button type="submit" class="btn btn-primary btn-block text-uppercase">Simpan</button>
               </div>
             </form>
