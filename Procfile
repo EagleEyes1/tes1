@@ -1,2 +1,2 @@
-web: gunicorn webbryan.wsgi --log-file -
+web: gunicorn sultanfajarjaya.wsgi --log-file -
 
