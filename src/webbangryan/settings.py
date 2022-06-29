@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'barmas',
     'halutama',
     'login',
-    'jenisikan'
+    'jenisikan',
+    'django_heroku',
 ]
 
 MIDDLEWARE = [
